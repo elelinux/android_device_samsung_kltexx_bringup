@@ -14,12 +14,18 @@
 # limitations under the License.
 #
 
-## Get non-open-source specific aspects
+# Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/klte/klte-vendor.mk)
 
-## Common overlays
+# Common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/klte-common/overlay-gsm
 
 # Inherit from klte-common
 $(call inherit-product, device/samsung/klte-common/klte-common.mk)
+
+# Disable OTA
+DISABLE_OTA := true
+
+# Custom Build Name
+TARGET_UNOFFICIAL_BUILD_ID := ELELINUX
 

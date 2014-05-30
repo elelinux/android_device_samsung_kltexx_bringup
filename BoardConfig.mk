@@ -20,14 +20,11 @@
 # definition file).
 #
 
-# inherit from common KLTE
+# inherit from klte-common
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/klltexx/BoardConfigVendor.mk
+-include vendor/samsung/kltexx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := kltexx,SM-G900F,klte
-
-# Kernel config
-TARGET_KERNEL_CONFIG      := klte_eur_defconfig
+TARGET_OTA_ASSERT_DEVICE := kltexx,kltecan,kltespr,kltetmo,klte,kltevzw,SM-G900F,SM-G900W8,SM-G900P,SM-G900T,SM-G900V
