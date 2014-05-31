@@ -14,8 +14,6 @@ persist.fuse_sdcard=true
 
 # Debug
 debug.sensors=1
-debug.sf.hw=1
-debug.egl.hw=1
 debug.composition.type=c2d
 debug.disable.bwc=1
 debug.mdpcomp.logs=0
