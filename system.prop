@@ -1,16 +1,14 @@
 #
 # System props for telephony
-# System prop to turn on CdmaLTEPhone always
-telephony.lteOnCdmaDevice=0
-rild.libargs=-d /dev/smd0
+telephony.lteOnGsmDevice=1
+ro.telephony.default_network=9
 persist.radio.mode_pref_nv10=1
+
+# cannot take spaces
+rild.libargs=-d /dev/smd0
 
 # System proverty for sys info indication
 persist.radio.add_power_save=1
-
-#Simulate sdcard on /data/media
-#
-persist.fuse_sdcard=true
 
 # Debug
 debug.sensors=1
@@ -19,19 +17,11 @@ debug.disable.bwc=1
 debug.mdpcomp.logs=0
 
 # Misc
-ro.qc.sdk.izat.premium_enabled=0
-ro.qc.sdk.izat.service_mask=0x0
 persist.gps.qc_nlp_in_use=1
 ro.gps.agps_provider=1
 ro.qualcomm.cabl=1
 ro.hdcp2.rx=tz
 ro.secwvk=144
-
-# Property to enable user to access Google WFD settings.
-persist.debug.wfd.enable=1
-
-#  Property to choose between virtual/external wfd display
-persist.sys.wfd.virtual=0
 
 # Audio configuration
 ro.qc.sdk.audio.fluencetype=fluence
@@ -42,9 +32,3 @@ use.voice.path.for.pcm.voip=true
 use.dedicated.device.for.voip=true
 qcom.hw.aac.encoder=true
 tunnel.audio.encode = true
-
-#use VERY_HIGH_QUALITY for audio resampler
-af.resampler.quality=4
-
-# System property for number of mQANElements
-ro.ril.telephony.mqanelements=6
