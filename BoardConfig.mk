@@ -28,7 +28,7 @@
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
-TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/klte-common/power/power_ext.c
+TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/kltexx/power/power_ext.c
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := kltexx,kltecan,kltespr,kltetmo,klte,kltevzw,SM-G900F,SM-G900W8,SM-G900P,SM-G900T,SM-G900V
