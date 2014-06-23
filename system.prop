@@ -2,33 +2,12 @@
 # System props for telephony
 telephony.lteOnGsmDevice=1
 ro.telephony.default_network=9
-persist.radio.mode_pref_nv10=1
 
-# cannot take spaces
-rild.libargs=-d /dev/smd0
 
-# System proverty for sys info indication
-persist.radio.add_power_save=1
 
-# Debug
-debug.sensors=1
-debug.composition.type=c2d
-debug.disable.bwc=1
-debug.mdpcomp.logs=0
 
-# Misc
-persist.gps.qc_nlp_in_use=1
-ro.gps.agps_provider=1
-ro.qualcomm.cabl=1
-ro.hdcp2.rx=tz
-ro.secwvk=144
 
-# Audio configuration
-ro.qc.sdk.audio.fluencetype=fluence
-persist.audio.fluence.voicecall=true
-persist.audio.fluence.voicerec=false
-persist.audio.fluence.speaker=true
-use.voice.path.for.pcm.voip=true
-use.dedicated.device.for.voip=true
-qcom.hw.aac.encoder=true
-tunnel.audio.encode = true
+
+
+
+

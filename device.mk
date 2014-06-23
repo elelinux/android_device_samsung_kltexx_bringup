@@ -23,9 +23,3 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/klte-common/overlay-gsm
 # Inherit from klte-common
 $(call inherit-product, device/samsung/klte-common/klte-common.mk)
 
-# Disable OTA
-DISABLE_OTA := true
-
-# Custom Build Name
-TARGET_UNOFFICIAL_BUILD_ID := ELELINUX
-
