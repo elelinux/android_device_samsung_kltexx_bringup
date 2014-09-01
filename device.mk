@@ -15,13 +15,13 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/klte-common/klte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/klte/klte-vendor.mk)
 
 # Common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/klte-common/overlay-gsm
 
 # Inherit from klte-common
-$(call inherit-product, device/samsung/klte-common/klte.mk)
+$(call inherit-product, device/samsung/klte-common/klte-common.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
