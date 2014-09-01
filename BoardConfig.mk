@@ -27,7 +27,12 @@
 -include vendor/samsung/kltexx/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := klte,kltexx,SM-G900F
+TARGET_OTA_ASSERT_DEVICE := kltexx,SM-G900F
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/kltexx/init/init_klte.c
+TARGET_UNIFIED_DEVICE := true
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_eur_defconfig
